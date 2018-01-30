@@ -11,7 +11,9 @@ let buzzWords = [
   "Model", "View", "Controller", "Entity", "Router", "Clean", "Reactive", 
   "Presenter", "Interactor", "Megatron", "Coordinator", "Flow", "Manager"
 ]
+
 let architecture = buzzWords.shuffled().takeRandom()
+
 let acronym = architecture.makeAcronym()
 ```
 
