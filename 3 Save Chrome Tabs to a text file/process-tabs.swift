@@ -17,9 +17,8 @@ do {
 
     for i in 0 ..< inputRows.count {
         if i % 3 == 0 {  // Select the rows 1..4..7..10..
-            outputRows += [String(inputRows[i].dropFirst().dropLast()) + "\n"]
-            // For Swift 3 I would do:
-            // let row = inputRows[i].replacingOccurrences(of: "\"", with: "")
+            let row = inputRows[i].replacingOccurrences(of: "\"", with: "") // Works with Swift 3 & 4 :D
+            outputRows += [row + "\n"]
         }
     }
 
