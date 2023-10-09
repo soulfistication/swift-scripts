@@ -12,14 +12,12 @@ let inputFileURL = URL(fileURLWithPath: inputFilePath)
 
 do {
     let fullContentString = try String(contentsOf: inputFileURL, encoding: .utf8)
-    let inputRows = fullContentString.components(separatedBy: "\n")
+    let inputRows = fullContentString.components(separatedBy: ",")
     var outputRows = [String]()
 
     for i in 0 ..< inputRows.count {
-        if i % 3 == 0 {  // Select the rows 1..4..7..10..
-            let row = inputRows[i].replacingOccurrences(of: "\"", with: "") // Works with Swift 3 & 4 :D
-            outputRows += [row + "\n"]
-        }
+        let row = inputRows[i].replacingOccurrences(of: "\"", with: "") // Works with Swift 3 & 4 :D
+        outputRows += [row + "\n"]
     }
 
     let result = outputRows.joined()

@@ -8,7 +8,7 @@
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "tabs.html",
-    "default_title": "Save all your tabs."
+    "default_title": "Save tabs"
   },
 
   "permissions": [
