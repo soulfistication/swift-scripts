@@ -23,38 +23,38 @@ I tried to code the missing parts that were needed to run that kind of code and 
 
 This script and the companion javscript Chrome extension are the first step towards that solution. I would like to have a more elegant solution to the problem but since I'm not a very skilled javascript developer this is what I came out with.
 
-0. Download this repo as a zip and uncompress it. You will find a folder called tabs-chrome-extension (you will need it later).
+0. Download this repo as a zip and uncompress it. You will find a folder called tabs-chrome-extension (you will need it later)
 
 1. Load the extension into Chrome: Click on the 3 dots -> More tools -> Extensions
 
-2. Enable developer mode which will enable to load unpacked extensions.
+2. Enable developer mode which will enable to load unpacked extensions
 
-3. Click on Load unpacked extension and select the folder tabs-chrome-extension that you previously unzipped. The new extension called tabSerialize should appear and be enabled.
+3. Click on Load unpacked extension and select the folder tabs-chrome-extension that you previously unzipped. The new extension called tabSerialize should appear and be enabled
 
-4. Close the Chrome extension tab and you will see a purple button appeared on the right side of your Chrome URL bar.
+4. Close the Chrome extension tab and you will see a purple button appeared on the right side of your Chrome URL bar
 
-5. Click the purple button and you will see a popup that says: "Save all your tabs! Finally!".
+5. Click the purple button and you will see a popup that says: "Save all your tabs! Finally!"
 
-6. Right click inside the popup and click on Inspect.
+6. Right click inside the popup and click on Inspect
 
 7. A new Windows will open with the Developer Tools. At the top there is a bar that says Elements, Console, Sources, Network, Performance, etc.
 
-8. Click on Console and then it will appear a small triangle and the word Array and a number to it's right side.
+8. Click on Console and then it will appear a small triangle and the word Array and a number to it's right side
 
-9. Click on the triangle.
+9. Click on the triangle
 
 10. Select all the text. The amount of text depends on how many tabs you had open. Select from the bottom (last url including quotes) to the first url excluding the number zero but including the quotes.
 
-11. Copy that text to a file called input.txt in your Desktop Folder.
+11. Copy that text to a file called input.txt in your Desktop Folder
 
 12. Open Terminal.app
 
-13. Go to the 3 Save Chrome Tabs to a text file folder (uncompressed previously).
+13. Go to the 3 Save Chrome Tabs to a text file folder (uncompressed previously)
 
 14. Type: ./process-tabs.swift
 
-15. The script will generate an output.txt file in your Desktop with all your tabs.
+15. The script will generate an output.txt file in your Desktop with all your tabs
 
-This process is worthwhile if you have more than 20 tabs open (like I do) because the alternative is to select each url manually from the chrome url bar to a text editor which is I think what most people have been doing. 
+This process is worthwhile if you have more than 20 tabs open (like I do) because the alternative is to select each url manually from the chrome url bar to a text editor which is I think what most people have been doing 
 
 Then you can mail the file or it's contents or do whatever you want.
